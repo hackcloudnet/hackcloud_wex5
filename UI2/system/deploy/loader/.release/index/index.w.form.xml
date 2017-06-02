@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cRny6Jf" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cRny6Jf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/barcode/barcodeImage,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cRny6Jf" class="cRny6Jf"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcj6BzYz-iosstatusbar cRny6Jf" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cRny6Jf"> 
+    <div class="x-panel-top cRny6Jf" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRny6Jf"></div>  
+    <div class="x-panel-content cRny6Jf" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cRny6Jf">
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cRny6Jf" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cRny6Jf"> 
+        <div class="x-contents-content active cRny6Jf" xid="content3" style="padding:15px" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cRny6Jf">
+          <div xid="div2" __cid="cRny6Jf" class="cRny6Jf">
+            <label xid="label2" __cid="cRny6Jf" class="cRny6Jf">共发现</label>
+            <label xid="label4" bind-text="appNumberLabel" __cid="cRny6Jf" class="cRny6Jf"/>
+            <label xid="label5" __cid="cRny6Jf" class="cRny6Jf">个调试设备</label>
+          </div>
+          <div xid="div3" __cid="cRny6Jf" class="cRny6Jf">
+            <label xid="label6" __cid="cRny6Jf" class="cRny6Jf">已经连接的设备：</label>
+            <label xid="label7" bind-text="modelLabel" __cid="cRny6Jf" class="cRny6Jf"/>
+          </div>
+          <div xid="div8" style="padding-left: 8px;" __cid="cRny6Jf" class="cRny6Jf"> 
+            <label xid="label1" class="x-label cRny6Jf" __cid="cRny6Jf">当前检查到的IP是：</label>  
+            <select xid="ip" bind-change="ipChange" style="vertical-align:top;margin-top:8px;margin-right:4px" __cid="cRny6Jf" class="cRny6Jf"/>
+            <label xid="label3" class="x-label cRny6Jf" __cid="cRny6Jf">如果IP地址不是无线网络IP，请从左边选择正确IP。</label> 
+          </div>
+          <div xid="div1" __cid="cRny6Jf" class="cRny6Jf">
+            <label xid="label1" __cid="cRny6Jf" class="cRny6Jf">小提示：如果您未在手机中安装apploader，则可扫码安装apploader，（iPhone设备请在safari中打开链接）。如果您已经安装apploader，但是apploader并未跳转至调试页面，则您可使用apploader中的扫码功能扫描此二维码，apploader会跳转至调试页面。</label>
+          </div>
+          <div xid="div7" style="padding: 8px" __cid="cRny6Jf" class="cRny6Jf"> 
+            <div xid="androidDiv" style="display:inline-block;" __cid="cRny6Jf" class="cRny6Jf">
+              <img src="$model/UI2/system/deploy/loader/img/android.png" alt="" xid="androidImage" style="cursor:pointer;padding-right: 16px" bind-click="androidImageClick" __cid="cRny6Jf" class="cRny6Jf"/>
+              <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cRny6Jf" type="qr" templateName="templateName" xid="androidQR" style="height:180px;width:180px;" barcodeConfig="{mw:1.0}" config="{&quot;barcodeConfig&quot;:&quot;{mw:1.0}&quot;,&quot;type&quot;:&quot;qr&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/barcode/barcodeImage'}" __cid="cRny6Jf">
+                <img id="img-androidQR" src="about:blank" style="vertical-align:middle;" __cid="cRny6Jf" class="cRny6Jf"/>
+              </div>
+            </div>  
+            <div xid="iosDiv" style="display:inline-block;" __cid="cRny6Jf" class="cRny6Jf">
+              <img src="$model/UI2/system/deploy/loader/img/apple.png" alt="" xid="iosImage" style="cursor:pointer;padding-right: 16px" bind-click="iosImageClick" __cid="cRny6Jf" class="cRny6Jf"/>
+              <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cRny6Jf" type="qr" templateName="templateName" xid="iosQR" style="height:180px;width:180px;" barcodeConfig="{mw:1.0}" config="{&quot;barcodeConfig&quot;:&quot;{mw:1.0}&quot;,&quot;type&quot;:&quot;qr&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/barcode/barcodeImage'}" __cid="cRny6Jf">
+                <img id="img-iosQR" src="about:blank" style="vertical-align:middle;" __cid="cRny6Jf" class="cRny6Jf"/>
+              </div>
+            </div>  
+            <label xid="tipLabel" class="x-label cRny6Jf" style="font-size:x-large;font-weight:bold;display:none" __cid="cRny6Jf">未生成android或者ios本地App</label>
+          </div> 
+        </div>
+      </div>
+    </div>  
+    <style __cid="cRny6Jf" class="cRny6Jf">.x-panel.pcj6BzYz-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcj6BzYz-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcj6BzYz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcj6BzYz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcj6BzYz-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcj6BzYz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcj6BzYz-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcj6BzYz-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcj6BzYz-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>
